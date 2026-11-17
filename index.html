@@ -3,64 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador y Color</title>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #1e293b;
-            color: white;
-            transition: background-color 0.4s ease;
-            text-align: center;
-        }
-        button {
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            border: none;
-            border-radius: 12px;
-            background-color: #ffffff;
-            color: #0f172a;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.1s ease;
-        }
-        button:active {
-            transform: scale(0.95);
-        }
-        p {
-            font-size: 1.4rem;
-            margin-top: 25px;
-        }
-    </style>
+    <title>Mi página web</title>
 </head>
 <body>
-
-    <h1>¡Prueba interactiva!</h1>
-    <button id="btnAccion">Presióname</button>
-    <p>Veces presionado: <strong id="contador">0</strong></p>
-
-    <script>
-        let clics = 0;
-        const colores = ['#1e293b', '#0f766e', '#4338ca', '#b91c1c', '#b45309', '#6d28d9', '#047857'];
-        
-        const boton = document.getElementById('btnAccion');
-        const textoContador = document.getElementById('contador');
-
-        boton.addEventListener('click', () => {
-            clics++;
-            textoContador.textContent = clics;
-            
-            // Cambia el color de fondo recorriendo la lista
-            const colorActual = colores[clics % colores.length];
-            document.body.style.backgroundColor = colorActual;
-        });
-    </script>
-
+    <h1>¡Hola, lo lograste! ;)</h1>
 </body>
 </html>
